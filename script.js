@@ -38,9 +38,9 @@ let descricao = document.getElementById("descricao")
 window.addEventListener('scroll', function(){
     const valor = window.scrollY;
 
-    bombom.style.top = valor * 0.15 + 'px';
-    potes.style.left = valor * 0.1 + 'px';
-    descricao.style.top = valor * 0.2 + 'px';
+    bombom.style.top = valor * 0.60 + 'px';
+    potes.style.left = valor * 0.3 + 'px';
+    // descricao.style.top = valor * 0.2 + 'px';
 
     console.log(valor)
 
