@@ -1,0 +1,117 @@
+@import url(https://db.onlinewebfonts.com/c/5245d7cb91408bdfe9d3eb0c46e05567?family=Ginkgo+LT+W04+Regular);
+
+:root {
+    --white: #fcfdfd;
+    --snow: #fcfdfd;
+    
+    --pink-50: #f4e4e7;
+    --pink-150: #eccbd1;
+
+    --cinza-100: #e1e1e6;
+    --cinza-400: #8d8d99;
+    --cinza-800: #202024;
+    --cinza-900: #121214;
+
+    --blue-100: #b0dad6;
+    --blue-300: #73cbc8;
+    --blue-900: #060F0F;
+
+}
+
+
+.parallax {
+    margin: 0 auto;
+    border-radius: 30px;
+    margin-top: 3rem;
+    width: 60%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pink-50);
+}
+
+.parallax p, h1, h2 {
+    font-family: 'Ginkgo LT W04 Regular', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+.cima {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.25rem;
+    margin: 1.25rem;
+    margin-left: 30rem;
+}
+.bombom {
+    width: 30%;
+}
+
+#descricao {
+    border-radius: 40px;
+    padding: 1.5rem;
+    font-size: 18px;
+    text-align: center;
+    color: var(--cinza-900);
+    width: 30%;
+    position: relative;
+}
+
+#descricao::before {
+    content: '';
+    top: 0;
+}
+
+#descricao::after {
+    content: '';
+    bottom: 0;
+}
+
+.bombom::before {
+    content: '';
+    top: 0;
+}
+
+.bombom::after {
+    content: '';
+    bottom: 0;
+}
+
+#chocolate {
+    width: 100%;
+    position: relative;
+    transition: 1s;
+}
+
+
+.pote {
+    justify-content: center;
+    margin: 0 auto; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    width: 40%;
+}
+
+.pote img {
+    margin: 0 auto;
+    width: 65%;
+    border: solid black;
+}
+
+.pote::before {
+    content: '';
+    top: 0;
+}
+
+.pote::after {
+    content: '';
+    bottom: 0;
+}
+
+#potes {
+    position: relative;
+    transition: 1.2s;
+    margin-left: 24px ;
+}
+
+

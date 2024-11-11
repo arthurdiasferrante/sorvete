@@ -1,0 +1,254 @@
+@import url(https://db.onlinewebfonts.com/c/5245d7cb91408bdfe9d3eb0c46e05567?family=Ginkgo+LT+W04+Regular);
+
+:root {
+
+    --white: #fcfdfd;
+    --snow: #fcfdfd;
+    
+    --pink-50: #f4e4e7;
+    --pink-150: #eccbd1;
+
+    --cinza-100: #e1e1e6;
+    --cinza-400: #8d8d99;
+    --cinza-800: #202024;
+    --cinza-900: #121214;
+
+    --blue-100: #b0dad6;
+    --blue-300: #73cbc8;
+
+    -verde-500: #00875f;
+    
+    --marrom-super-escuro-sla: #160d01;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* nao mexe nessa merda pelo amor de deus*/
+
+body {
+    margin: 0;
+    background-color: var(--white);
+    justify-content: center;
+    padding: 0;
+    height: 100vh;
+    flex-direction: row;
+    width: 100%;
+    -webkit-font-smoothing: antialiased; 
+}
+
+body, input, textarea, button {
+    font-family: "Ginkgo LT W04 Regular";
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+ 
+/*HEADER*/
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 9vh;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 0.25rem;
+    background-color: var(--white);
+    box-shadow: 0 5px 8px #f3f3f3;
+}
+
+.header .navbar {
+    width: 100%;
+    padding: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header .navbar img {
+    height: 6.25rem;
+    cursor: pointer;
+    margin-top: 0.313rem;
+}
+
+.header .navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 2rem;
+}
+
+
+.header .navbar ul li a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: var(--cinza-800);
+}
+
+.header .navbar ul li a:hover {
+    color: var(--blue-300);
+    transition: 0.14s;
+}
+
+
+/* -------- CARROSEL --------*/
+
+.carrosel {
+    margin: 0 auto;
+    align-items: center;
+    display: block;
+    width: 50%;
+    overflow: hidden;
+    flex-direction: column;
+    height: 30rem;
+    border-radius: 50px;
+    margin-top: 2rem;
+}
+
+.slides {
+    width: 400%;
+    height: 30rem;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    transition: 2s;
+}
+
+.slide img {
+    width: 100%;
+    height: 30rem;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+
+.navegacao-manual {
+    position: absolute;
+    width: 60rem;
+    display: flex;
+    margin-left: 44rem;
+    margin-top: 30rem;
+}
+
+
+.navegacao-manual .manual-btn {
+    border: 0.125rem solid var(--cinza-900);
+    padding: 0.313rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: 0.38s;
+}
+
+.manual-btn:hover {
+    background-color: var(--cinza-800);
+}
+.manual-btn:not(:last-child) {
+    margin-right: 2rem;
+}
+
+#radio1:checked ~ .primeiro {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .primeiro {
+    margin-left: -75%;
+}
+
+.navegacao-auto {
+    position: absolute;
+    width: 60rem;
+    margin-left: 18.7rem;
+    margin-top: 32.1rem;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+.navegacao-auto div{
+    border: 2px solid var(--azul-700);
+    padding: 0.313rem;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    transition: 0.38s;
+}
+
+.navegacao-auto div:not(:last-child) {
+    margin-right: 2.0rem;
+}
+
+#radio1:checked ~ .navegacao-auto .auto-btn1 {
+    background-color: var(--cinza-900)
+}
+
+#radio2:checked ~ .navegacao-auto .auto-btn2 {
+    background-color: var(--cinza-900)
+}
+
+#radio3:checked ~ .navegacao-auto .auto-btn3 {
+    background-color: var(--cinza-900)
+}
+
+#radio4:checked ~ .navegacao-auto .auto-btn4 {
+    background-color: var(--cinza-900)
+}
+
+
+/* ---------- PARALLAX --------- */
+
+
+
+/* ---------- SEARCH ----------- */
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.25rem;
+
+}
+
+.search-input {
+    border-radius: 20px;
+    padding: 0.625rem;
+    font-size: 1rem;
+}
+
+.search-button {
+    padding: 0.625rem;
+    font-size: 1rem;
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+}
+
+.search-button:hover {
+    background-color: #45a049; 
+}
+
+
+
+

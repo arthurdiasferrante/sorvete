@@ -1,0 +1,12 @@
+<p>Sejem Bem-vindos no nosso site de sorvetaria e
+ desejamos boas escolhas e desfrutam-se do melho sorvete da rejião </p>
+
+<div class="search-container">
+    <input type="text" class="search-input" placeholder="Digite sua busca...">
+    <button class="search-button">Buscar</button>
+</div>
+
+
+
+
+background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(img/sorvete.jpeg);
