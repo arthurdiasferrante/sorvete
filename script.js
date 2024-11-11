@@ -33,18 +33,18 @@ comecaIntervalo()
 
 let bombom = document.getElementById("chocolate")
 let potes = document.getElementById("potes")
-let descricao = document.getElementById("descricao")
+let info = document.getElementById("info")
 
 window.addEventListener('scroll', function(){
     const valor = window.scrollY;
 
     bombom.style.top = valor * 0.15 + 'px';
     potes.style.left = valor * 0.1 + 'px';
-    descricao.style.top = valor * 0.2 + 'px';
+    info.style.top = valor * 0.2 + 'px';
 
     console.log(valor)
 
-    if (valor >= 937) {
+    if (valor >= 20) {
         window.removeEventListener('scroll')
     }
 })

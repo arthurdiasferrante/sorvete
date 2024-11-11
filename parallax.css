@@ -23,7 +23,7 @@
     margin: 0 auto;
     border-radius: 30px;
     margin-top: 3rem;
-    width: 60%;
+    width: 100%;
     overflow: hidden;
     justify-content: center;
     align-items: center;
@@ -45,25 +45,15 @@
     width: 30%;
 }
 
-#descricao {
+.descricao {
     border-radius: 40px;
     padding: 1.5rem;
     font-size: 18px;
     text-align: center;
     color: var(--cinza-900);
     width: 30%;
-    position: relative;
 }
 
-#descricao::before {
-    content: '';
-    top: 0;
-}
-
-#descricao::after {
-    content: '';
-    bottom: 0;
-}
 
 .bombom::before {
     content: '';
@@ -74,6 +64,7 @@
     content: '';
     bottom: 0;
 }
+
 
 #chocolate {
     width: 100%;
@@ -111,7 +102,7 @@
 #potes {
     position: relative;
     transition: 1.2s;
-    margin-left: 24px ;
+    margin-right: 31rem ;
 }
 
 
