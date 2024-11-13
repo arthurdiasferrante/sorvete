@@ -39,7 +39,7 @@
     justify-content: center;
     gap: 4.25rem;
     margin: 1.25rem;
-    margin-left: 30rem;
+    /* margin-left: 30rem; */
 }
 .bombom {
     width: 30%;
@@ -80,13 +80,12 @@
     justify-content: center;
     flex-direction: row;
     display: flex;
-    width: 40%;
 }
 
 .pote img {
     margin: 0 auto;
     width: 65%;
-    border: solid black;
+    /* border: solid black; */
 }
 
 .pote::before {
