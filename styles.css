@@ -39,6 +39,11 @@ body {
     flex-direction: row;
     width: 100%;
     -webkit-font-smoothing: antialiased; 
+    background-image: url('./img/background.webp'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* A imagem cobre todo o fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-attachment: fixed; /* Faz o fundo ficar fixo ao rolar a página */
+    background-position: center; /* Centraliza a imagem no fundo */
 }
 
 body, input, textarea, button {
@@ -140,7 +145,6 @@ body, input, textarea, button {
     width: 60rem;
     display: flex;
     margin-left: 44rem;
-    margin-top: 30rem;
 }
 
 
@@ -176,11 +180,14 @@ body, input, textarea, button {
     margin-left: -75%;
 }
 
+.navegacao-content {
+    position: relative
+}
+
 .navegacao-auto {
     position: absolute;
     width: 60rem;
     margin-left: 18.7rem;
-    margin-top: 32.1rem;
     display: flex;
     align-items: center;    
     justify-content: center;
@@ -251,5 +258,8 @@ body, input, textarea, button {
 }
 
 
+/* ---------- clear ----------- */
 
-
+.boxClear {
+    box-sizing: content-box;
+}
