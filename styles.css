@@ -45,14 +45,15 @@ body {
     background-position: center; /* Centraliza a imagem no fundo */
 }
 
-.bg-content {
+    /* background */
+
+.bg-container {
     background-image: url('./img/background.webp'); 
     height: 91vh;
     background-size: cover;
 }
 
-.container {
-    
+.bg-content {
     width: 64rem;
     height: 91vh;
     display: flex;
@@ -67,6 +68,44 @@ body, input, textarea, button {
 }
  
 /*HEADER*/
+
+.header-container{
+    height: 9vh;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+}
+
+.header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-content img {
+    height: 5.80rem;
+    cursor: pointer;
+}
+
+.header-content ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 2rem;
+}
+
+.header-content ul li a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: var(--cinza-800);
+}
+
+.header-content ul li a:hover {
+    color: var(--blue-300);
+    transition: 0.14s;
+}
+
+
 
 .header {
     display: flex;
