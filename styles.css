@@ -49,15 +49,19 @@ body {
 
 .bg-container {
     background-image: url('./img/background.webp'); 
-    height: 91vh;
+    height: 93vh;
     background-size: cover;
 }
 
 .bg-content {
-    width: 64rem;
+    width: 70%;
     height: 91vh;
     display: flex;
     margin: 0 auto;
+}
+
+.main-content {
+    margin-top: 1rem;
 }
 
 
@@ -70,7 +74,7 @@ body, input, textarea, button {
 /*HEADER*/
 
 .header-container{
-    height: 9vh;
+    height: 7vh;
     background-color: var(--white);
     display: flex;
     justify-content: center;
@@ -105,64 +109,18 @@ body, input, textarea, button {
     transition: 0.14s;
 }
 
-
-
-.header {
-    display: flex;
-    width: 100%;
-    height: 9vh;
-    margin: 0 auto;
-    justify-content: space-around;
-    padding: 0.25rem;
-    background-color: var(--white);
-}
-
-.header .navbar {
-    width: 100%;
-    padding: 2.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.header .navbar img {
-    height: 6.25rem;
-    cursor: pointer;
-    margin-top: 0.313rem;
-}
-
-.header .navbar ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 2rem;
-}
-
-
-.header .navbar ul li a {
-    text-decoration: none;
-    font-size: 1.25rem;
-    color: var(--cinza-800);
-}
-
-.header .navbar ul li a:hover {
-    color: var(--blue-300);
-    transition: 0.14s;
-}
-
-
 /* -------- CARROSEL --------*/
 
 .carrosel {
     margin: 0 auto;
     align-items: center;
     display: block;
-    width: 50%;
+    width: 60%;
     overflow: hidden;
     flex-direction: column;
     height: 30rem;
     border-radius: 50px;
-    margin-top: 2rem;
-    /* display: none */
+    margin-top: 1rem;
 }
 
 .slides {
@@ -205,7 +163,7 @@ body, input, textarea, button {
     border: 0.125rem solid var(--cinza-900);
     padding: 0.313rem;
     border-radius: 10px;
-    margin-top: 2rem;
+    margin-top: 1rem;
     cursor: pointer;
     transition: 0.38s;
 }
