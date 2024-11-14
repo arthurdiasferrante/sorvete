@@ -39,12 +39,26 @@ body {
     flex-direction: row;
     width: 100%;
     -webkit-font-smoothing: antialiased; 
-    background-image: url('./img/background.webp'); /* Substitua pelo caminho da sua imagem */
     background-size: cover; /* A imagem cobre todo o fundo */
     background-repeat: no-repeat; /* Evita a repetição da imagem */
     background-attachment: fixed; /* Faz o fundo ficar fixo ao rolar a página */
     background-position: center; /* Centraliza a imagem no fundo */
 }
+
+.bg-content {
+    background-image: url('./img/background.webp'); 
+    height: 91vh;
+    background-size: cover;
+}
+
+.container {
+    
+    width: 64rem;
+    height: 91vh;
+    display: flex;
+    margin: 0 auto;
+}
+
 
 body, input, textarea, button {
     font-family: "Ginkgo LT W04 Regular";
@@ -62,7 +76,6 @@ body, input, textarea, button {
     justify-content: space-around;
     padding: 0.25rem;
     background-color: var(--white);
-    box-shadow: 0 5px 8px #f3f3f3;
 }
 
 .header .navbar {
@@ -141,14 +154,15 @@ body, input, textarea, button {
 
 
 .navegacao-manual {
-    position: absolute;
     width: 60rem;
     display: flex;
-    margin-left: 44rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 
-.navegacao-manual .manual-btn {
+.manual-btn {
     border: 0.125rem solid var(--cinza-900);
     padding: 0.313rem;
     border-radius: 10px;
@@ -157,11 +171,12 @@ body, input, textarea, button {
     transition: 0.38s;
 }
 
+
 .manual-btn:hover {
     background-color: var(--cinza-800);
 }
 .manual-btn:not(:last-child) {
-    margin-right: 2rem;
+    margin-right: 1.8rem;
 }
 
 #radio1:checked ~ .primeiro {
@@ -180,46 +195,25 @@ body, input, textarea, button {
     margin-left: -75%;
 }
 
+
 .navegacao-content {
     position: relative
 }
 
-.navegacao-auto {
-    position: absolute;
-    width: 60rem;
-    margin-left: 18.7rem;
-    display: flex;
-    align-items: center;    
-    justify-content: center;
-}
 
-.navegacao-auto div{
-    border: 2px solid var(--azul-700);
-    padding: 0.313rem;
-    border-radius: 20px;
-    cursor: pointer;
-    width: 12px;
-    height: 12px;
-    transition: 0.38s;
-}
-
-.navegacao-auto div:not(:last-child) {
-    margin-right: 2.0rem;
-}
-
-#radio1:checked ~ .navegacao-auto .auto-btn1 {
+#radio1:checked ~ .navegacao-content #btncheck1 {
     background-color: var(--cinza-900)
 }
 
-#radio2:checked ~ .navegacao-auto .auto-btn2 {
+#radio2:checked ~ #btncheck2 {
     background-color: var(--cinza-900)
 }
 
-#radio3:checked ~ .navegacao-auto .auto-btn3 {
+#radio3:checked ~ #btncheck3 {
     background-color: var(--cinza-900)
 }
 
-#radio4:checked ~ .navegacao-auto .auto-btn4 {
+#radio4:checked ~ #btncheck4 {
     background-color: var(--cinza-900)
 }
 

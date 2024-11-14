@@ -23,7 +23,8 @@
     margin: 0 auto;
     border-radius: 30px;
     margin-top: 3rem;
-    width: 100%;
+    width: 70%;
+    height: 145vh;
     overflow: hidden;
     justify-content: center;
     align-items: center;
@@ -33,27 +34,30 @@
 .parallax p, h1, h2 {
     font-family: 'Ginkgo LT W04 Regular', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
 
+/*
 .cima {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4.25rem;
     margin: 1.25rem;
-    /* margin-left: 30rem; */
-}
+    /* margin-left: 30rem; 
+} */
+
+
 .bombom {
-    width: 30%;
+    position: relative;
+    margin: 1.25rem auto;
+    justify-content: center;
+    display: flex;
 }
 
-.descricao {
-    border-radius: 40px;
-    padding: 1.5rem;
-    font-size: 18px;
-    text-align: center;
-    color: var(--cinza-900);
-    width: 30%;
+#chocolate {
+    margin: 0 auto;
+    transition: 1s;
+    border: solid;
+    width: 50%;
+    position: absolute;
 }
-
 
 .bombom::before {
     content: '';
@@ -66,26 +70,20 @@
 }
 
 
-#chocolate {
-    width: 100%;
-    position: relative;
-    transition: 1s;
-}
-
-
 .pote {
     justify-content: center;
-    margin: 0 auto; 
+    margin-top: auto;
+    bottom: auto;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
 }
 
 .pote img {
     margin: 0 auto;
-    width: 65%;
-    /* border: solid black; */
+    width: 75%;
+    border: solid;
 }
 
 .pote::before {
@@ -99,9 +97,18 @@
 }
 
 #potes {
-    position: relative;
     transition: 1.2s;
-    margin-right: 31rem ;
+    justify-content: center;
+    margin: auto;
+    position: relative;
 }
 
+.descricao {
+    border-radius: 40px;
+    padding: 1.5rem;
+    font-size: 18px;
+    text-align: center;
+    color: var(--cinza-900);
+    width: 30%;
+}
 
