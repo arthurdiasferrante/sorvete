@@ -23,7 +23,7 @@
     margin: 3rem auto;
     border-radius: 30px;
     width: 80%;
-    height: 90rem;
+    /* height: 90rem; */
     overflow: hidden;
     background-color: var(--pink-50);
 }
@@ -35,7 +35,7 @@
 
 .bombom {
     position: relative;
-    margin: 1.25rem auto;
+    margin: 11rem auto;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -44,8 +44,7 @@
 #chocolate {
     margin: 0 auto;
     transition: 1s;
-    border: solid;
-    width: 40%;
+    width: 60%;
 }
 
 .bombom::before {
@@ -61,12 +60,12 @@
 
 .pote {
     display: flex;
+    margin-top: -400px
 }
 
 .pote img {
     margin: 0 auto;
-    width: 65%;
-    border: solid;
+    width: 75%;
 }
 
 .pote::before {

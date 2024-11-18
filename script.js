@@ -42,9 +42,8 @@ let info = document.getElementById("info")
 mainContent.addEventListener('scroll', function(){
     const valor = mainContent.scrollTop;
 
-    bombom.style.top = valor * 0. + 'px';
-    potes.style.bottom = valor * 0. + 'px';
+    bombom.style.bottom = valor * 0.25 + 'px';
+    potes.style.top = valor * 0.05 + 'px';
 
-    console.log(valor)
 })
 
