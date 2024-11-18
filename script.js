@@ -3,6 +3,7 @@ let intervalId
 const tempoEmCooldown = 5000 
 
 
+
 const clicarBotao = function(){
     document.getElementById("radio1").checked = true;
 
@@ -31,20 +32,19 @@ comecaIntervalo()
 
 // parallax
 
+const mainContent = document.querySelector('.bg-content')
+
 let bombom = document.getElementById("chocolate")
 let potes = document.getElementById("potes")
 let info = document.getElementById("info")
 
-window.addEventListener('scroll', function(){
-    const valor = window.scrollY;
 
-    bombom.style.top = valor * 0 + 'px';
-    potes.style.top = valor * 0 + 'px';
+mainContent.addEventListener('scroll', function(){
+    const valor = mainContent.scrollTop;
+
+    bombom.style.top = valor * 0. + 'px';
+    potes.style.bottom = valor * 0. + 'px';
 
     console.log(valor)
-
-    if (valor >= 20) {
-        window.removeEventListener('scroll')
-    }
 })
 

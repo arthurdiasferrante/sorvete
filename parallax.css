@@ -20,33 +20,24 @@
 
 
 .parallax {
-    margin: 0 auto;
+    margin: 3rem auto;
     border-radius: 30px;
-    margin-top: 3rem;
-    width: 70%;
+    width: 80%;
+    height: 90rem;
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
     background-color: var(--pink-50);
 }
 
 .parallax p, h1, h2 {
-    font-family: 'Ginkgo LT W04 Regular', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
-
-/*
-.cima {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1.25rem;
-    /* margin-left: 30rem; 
-} */
+    font-family: 'Ginkgo LT W04 Regular', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 
 .bombom {
     position: relative;
     margin: 1.25rem auto;
     justify-content: center;
+    align-items: center;
     display: flex;
 }
 
@@ -54,8 +45,7 @@
     margin: 0 auto;
     transition: 1s;
     border: solid;
-    width: 50%;
-    position: absolute;
+    width: 40%;
 }
 
 .bombom::before {
@@ -70,18 +60,12 @@
 
 
 .pote {
-    justify-content: center;
-    margin-top: auto;
-    bottom: auto;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     display: flex;
 }
 
 .pote img {
     margin: 0 auto;
-    width: 75%;
+    width: 65%;
     border: solid;
 }
 
