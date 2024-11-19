@@ -21,8 +21,9 @@
 
 .parallax {
     margin: 3rem auto;
-    border-radius: 30px;
+    border-radius: 20px;
     width: 80%;
+    padding: 2rem;
     /* height: 90rem; */
     overflow: hidden;
     background-color: var(--pink-50);
