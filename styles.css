@@ -173,6 +173,10 @@ body, input, textarea, button {
     margin: auto;
 }
 
+.navegacao-content {
+    position: relative
+}
+
 
 .manual-btn {
     border: 0.125rem solid var(--cinza-900);
@@ -183,10 +187,14 @@ body, input, textarea, button {
     transition: 0.38s;
 }
 
+.manual-btn.active {
+    background-color: var(--cinza-900); 
+  }
 
 .manual-btn:hover {
     background-color: var(--cinza-800);
 }
+
 .manual-btn:not(:last-child) {
     margin-right: 1.8rem;
 }
@@ -207,27 +215,6 @@ body, input, textarea, button {
     margin-left: -75%;
 }
 
-
-.navegacao-content {
-    position: relative
-}
-
-
-#radio1:checked ~ .navegacao-content #btncheck1 {
-    background-color: var(--cinza-900)
-}
-
-#radio2:checked ~ #btncheck2 {
-    background-color: var(--cinza-900)
-}
-
-#radio3:checked ~ #btncheck3 {
-    background-color: var(--cinza-900)
-}
-
-#radio4:checked ~ #btncheck4 {
-    background-color: var(--cinza-900)
-}
 
 
 /* ---------- PARALLAX --------- */

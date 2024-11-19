@@ -1,21 +1,11 @@
 let count = 1;
 let intervalId
-const tempoEmCooldown = 5000 
 
-
-
-const clicarBotao = function(){
-    document.getElementById("radio1").checked = true;
-
-    clearInterval(intervalId)
-    
-    setTimeout(comecaIntervalo, tempoEmCooldown)
-}
 
 function comecaIntervalo() {
     intervalId = setInterval(function(){
         nextImage();
-    }, 50000)
+    }, 10000)
 }
 
 
@@ -27,6 +17,17 @@ function nextImage(){
 
     document.getElementById("radio"+count).checked = true;
 }
+
+const buttons = document.querySelectorAll('.manual-btn')
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        buttons.forEach((button) => button.classList.remove('active'))
+
+        button.classList.add('active')
+    })
+})
+
 
 comecaIntervalo()
 
